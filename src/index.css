@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: auto;
+  place-items: center;
+  max-width: 1500px;
+  min-width: 320px;
+  min-height: 100vh;
+  transition: all 0.2s ease-out;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.container{
+  display: flex;
+  padding: 0 20%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.card {
+  width: 200px;
+  padding: 1em;
+  border:1px solid #111;
+  border-radius: 20px;
+  margin: 1em;
+}
+
+body.dark-mode{
+  background-color:#111;
+  color:#fff;
+}
+
+.card.dark-mode {
+ border:1px solid #fff;
+}
+
+body.light-mode{
+  background-color:#fff;
+  color:#111;
+}
+
+
+
+button.button.dark-mode{
+  background-color:#fff;
+  color:#111;
+}
+
+button.button.light-mode{
+  background-color:#111;
+  color:#fff;
+}
+
+.btn{
+  margin-top:2em;
+  margin-bottom:3em;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.btn button{
+ background-color:#111;
+ color:#fff;
+}
+
+@media screen and (min-width:900px){
+  .container{
+   flex-direction:row;
+   flex-wrap: wrap;
+   justify-content : space-between; 
+ }
+}
